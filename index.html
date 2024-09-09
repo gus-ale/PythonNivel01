@@ -3,185 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PYTHON NIVEL BÁSICO</title>
+    <title>Curso Básico de Python</title>
     <style>
-		
-		#pu{
-			background-color:#BFBFBF
-		}
-		#colortitulo{
-			color :blue;
-			
-		}
-		p{
-			background-color:#4343A3;
-			color : white;
-			height : 50px;
-			padding:0;
-			margin:0;
-			font-size: 15px;
-			text-align : center;
-			line-height : 50px;
-		}			
-        /* Estilos para el menú */
+        body {
+            background-color: #F0F0F0;
+            font-family: Arial, sans-serif;
+        }
+        /* Estilos del menú */
         .menu {
             float: left;
             width: 300px;
             margin-right: 20px;
-            overflow-y: auto; /* Permitir desplazamiento vertical */
-            max-height: calc(100vh - 40px); /* Altura máxima igual al 100% del viewport menos el margen superior e inferior */
+            background-color: #1E90FF;
+            padding: 10px;
+            border-radius: 5px;
         }
-      
+
+        .menu h2 {
+            color: #FFFFFF;
+            text-align: center;
+        }
+
         .menu a {
             display: block;
             padding: 10px;
-            background-color: #1300F2;
+            background-color: #4169E1;
             color: white;
             text-decoration: none;
-            margin-bottom: 0px;
-            position: relative;
-            padding-left: 40px; /* Espacio para el icono */
-            border :solid 1px #1A1AB3;
+            margin-bottom: 5px;
+            border-radius: 3px;
         }
+
         .menu a:hover {
-            background-color: #0056b3;
+            background-color: #6495ED;
         }
-        .menu #cab{
-			align: center;
-		}	
-        .menu a::before {
-            content: "";
-            width: 24px; /* Tamaño del icono */
-            height: 24px;
-            background-image: url(''); /* URL del ícono */
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 10px; /* Posición del icono */
-            top: 50%; /* Centrado verticalmente */
-            transform: translateY(-50%);
-        }
-        /* Estilos para los submenús */
+
         .submenu {
             display: none;
             padding-left: 20px;
         }
+
         .submenu a {
-            display: block;
-            padding: 5px;
-            color: #333;
-            text-decoration: none;
+            background-color: #87CEFA;
+            color: #000;
         }
-        /* Estilos para el contenedor del video */
+
+        /* Icono de flecha para desplegar submenús */
+        .menu a::after {
+            content: '▼';
+            float: right;
+            padding-right: 10px;
+        }
+
+        /* Estilo para el contenedor del video */
         #video-container {
-            margin-top: 20px;
-            margin-left: 300px; /* Para dejar espacio al menú */
+            margin-top: 10px;
+            margin-left: 320px;
             text-align: center;
-            background-color :#4D4D4D;
-          
+            background-color: #DCDCDC;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #4682B4;
         }
     </style>
 </head>
-<header>
+<body>
 
-</header>
-<body id ="pu">
     <div class="menu">
-        <div id ="cab">
-			<img src="">
-		</div>
-		<p>INTRODUCCIÓN A PYTHON</p>
-        <a href="#" onclick="loadVideo('YGnlPumCuXs')">Introducción a la programación</a>
-        <a href="#" onclick="loadVideo('kVocO-PbyaM')">Algoritmos</a>
-        <a href="#" onclick="loadVideo('hQDnU4o7MMk')">Paradigmas de programación</a> <!-- Agrega más enlaces a otros videos aquí -->
-        <a href="#" onclick="loadVideo('videoId4')">Concepto de Objetos</a>
-        <a href="#" onclick="loadVideo('videoId5')">Manejo de la memoria en Python </a>
-        <a href="#" onclick="loadVideo('videoId4')">Variables y tipos de datos</a>
-        <a href="#" onclick="loadVideo('videoId5')">Operadores aritméticos</a>
-        <a href="#" onclick="loadVideo('videoId4')">Operadores lógicos</a>
-        
-        <p>CONTROL DE FLUJO : CONDICIONALES </p>
-        <a href="#" onclick="loadVideo('')">Condicional IF</a>
-        <a href="#" onclick="loadVideo('')">Condicional IF-ELSE</a>
-        <a href="#" onclick="loadVideo('videoId3')">Condicional IF - ELIF - ELSE </a> <!-- Agrega más enlaces a otros videos aquí -->
-        <a href="#" onclick="loadVideo('')">Condicionales anidados</a>
-        <a href="#" onclick="loadVideo('')">Ejercio 01 </a>
-        <a href="#" onclick="loadVideo('')">Condicional IF-ELSE</a>
-        <a href="#" onclick="loadVideo('videoId3')">Condicional IF - ELIF - ELSE </a> <!-- Agrega más enlaces a otros videos aquí -->
-        <a href="#" onclick="loadVideo('')">Condicionales anidados</a>
-        <a href="#" onclick="loadVideo('')">Condicional IF</a>
-        <a href="#" onclick="loadVideo('')">Condicional IF-ELSE</a>
-        <a href="#" onclick="loadVideo('videoId3')">Condicional IF - ELIF - ELSE </a> <!-- Agrega más enlaces a otros videos aquí -->
-        <a href="#" onclick="loadVideo('')">Condicionales anidados</a>
-        <p>CONTENEDORES</p>
-        <a href="#" onclick="loadVideo('')">Listas</a>
-        <a href="#" onclick="loadVideo('')">Métodos de Listas</a>
-        <a href="#" onclick="loadVideo('videoId3')">Tuplas</a> <!-- Agrega más enlaces a otros videos aquí -->
-        <a href="#" onclick="loadVideo('videoId4')">Métodos de tuplas</a>
-        <a href="#" onclick="loadVideo('videoId5')">Diccionarios</a>
-        <a href="#" onclick="loadVideo('videoId4')">Métodos de diccionarios</a>
-        <a href="#" onclick="loadVideo('videoId5')">Conjuntos</a>
-        <a href="#" onclick="loadVideo('videoId4')">Efecto Joule</a>
-        <a href="#" onclick="loadVideo('videoId5')">Voltímetros y amperímetros</a>
-        <a href="#" onclick="loadVideo('videoId4')">Circuitos eléctricos I</a>
-        <a href="#" onclick="loadVideo('videoId4')">Circuitos eléctricos II</a>
-		<a href="#" onclick="loadVideo('videoId4')">Circuitos eléctricos III</a>
-         
-        
-        
-        <p>FUNCIONES</p>
-        <a href="#" onclick="loadVideo('videoId5')">Temperatura y calor</a>
-        <a href="#" onclick="loadVideo('videoId4')">Calor específico</a>
-        <a href="#" onclick="loadVideo('videoId5')">Calor latente</a>
-        
-        <a href="#" onclick="loadVideo('videoId5')">Diagramas de T vs Q</a>
-        <a href="#" onclick="loadVideo('videoId4')">Temperatura de equilibrio en mezclas</a>
-        <a href="#" onclick="loadVideo('videoId5')">Transmisión del calor </a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios I </a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios II </a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios III </a>
-        
-        <p>PROGRAMACIÓN ORIENTADA A OBJETOS</p>
-        <a href="#" onclick="loadVideo('videoId6')">Sistemas</a>
-        <a href="#" onclick="loadVideo('videoId7')">Calor y trabajo</a>
-        <a href="#" onclick="loadVideo('videoId7')">Energía interna , calor y trabajo</a>
-        <a href="#" onclick="loadVideo('videoId8')">Transformaciones isobáricas, isocóricas , isotérmicas y adiabáticas</a>
-        
-        <a href="#" onclick="loadVideo('videoId10')">Ejercicios I</a>
-        <a href="#" onclick="loadVideo('videoId4')">Ejercicios II</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios III</a>
-        <a href="#" onclick="loadVideo('videoId4')">Ejercicios IV</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios V</a>
-        
-        <p>EXCEPCIONES</p>
-        
-        <a href="#" onclick="loadVideo('videoId6')">Segundo principio</a>
-        <a href="#" onclick="loadVideo('videoId7')">Entropía</a>
-        
-        <a href="#" onclick="loadVideo('videoId10')">Análisis de problemas I</a>
-        <a href="#" onclick="loadVideo('videoId10')">Análisis de problemas II</a>
-       
-        
+        <h2>Curso de Python</h2>
+        <!-- Temas del curso -->
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema1')">1. Introducción a Python</a>
+        <div id="tema1" class="submenu">
+            <a href="#" onclick="loadVideo('rfscVS0vtbw')">¿Qué es Python?</a>
+            <a href="#" onclick="loadVideo('YYXdXT2l-Gg')">Instalación y primeros pasos</a>
+            <a href="#" onclick="loadVideo('I2wURDqiXdM')">Ejecutar scripts</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema2')">2. Control de Flujo</a>
+        <div id="tema2" class="submenu">
+            <a href="#" onclick="loadVideo('w86Jbo9Zt3Q')">Estructuras de control (if, else, elif)</a>
+            <a href="#" onclick="loadVideo('hEgO047GxaQ')">Bucles (for, while)</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema3')">3. Funciones y Módulos</a>
+        <div id="tema3" class="submenu">
+            <a href="#" onclick="loadVideo('9Os0o3wzS_I')">Definición y uso de funciones</a>
+            <a href="#" onclick="loadVideo('mh6r2jpS0Dw')">Argumentos y valores de retorno</a>
+            <a href="#" onclick="loadVideo('25ovCm9jKfA')">Importación y uso de módulos</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema4')">4. Estructuras de Datos</a>
+        <div id="tema4" class="submenu">
+            <a href="#" onclick="loadVideo('OH86QmQa-3E')">Listas</a>
+            <a href="#" onclick="loadVideo('NdJ9KXlzePE')">Tuplas</a>
+            <a href="#" onclick="loadVideo('OH86QmQa-3E')">Diccionarios</a>
+            <a href="#" onclick="loadVideo('OH86QmQa-3E')">Conjuntos</a>
+            <a href="#" onclick="loadVideo('OH86QmQa-3E')">Listas bidimensionales</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema5')">5. Automatización de Tareas Comunes</a>
+        <div id="tema5" class="submenu">
+            <a href="#" onclick="loadVideo('9Usxh6T7mC4')">Lectura y escritura de archivos</a>
+            <a href="#" onclick="loadVideo('QUXAcg3pv5A')">Uso de bibliotecas para automatización</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema6')">6. Automatización de Navegadores Web</a>
+        <div id="tema6" class="submenu">
+            <a href="#" onclick="loadVideo('rfscVS0vtbw')">Introducción a `selenium`</a>
+            <a href="#" onclick="loadVideo('YYXdXT2l-Gg')">Navegación y extracción de datos</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema7')">7. Automatización de Correos Electrónicos</a>
+        <div id="tema7" class="submenu">
+            <a href="#" onclick="loadVideo('k4EEnpSYfEM')">Envío de correos con `smtplib`</a>
+            <a href="#" onclick="loadVideo('Vb9lgJVeIP8')">Lectura y gestión de bandejas de entrada</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema8')">8. Interacción con APIs</a>
+        <div id="tema8" class="submenu">
+            <a href="#" onclick="loadVideo('ubIeCzZ9zS0')">Introducción a las APIs y solicitudes HTTP</a>
+            <a href="#" onclick="loadVideo('yb2zkxHD5Lg')">Uso de `requests` para interactuar con APIs</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema9')">9. Automatización de Reportes y Datos</a>
+        <div id="tema9" class="submenu">
+            <a href="#" onclick="loadVideo('GFPW3lw4Gyk')">Generación de reportes en PDF o Excel</a>
+            <a href="#" onclick="loadVideo('hVx-fhHbsYU')">Uso de `pandas` y `openpyxl`</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema10')">10. Proyectos Prácticos</a>
+        <div id="tema10" class="submenu">
+            <a href="#" onclick="loadVideo('bZXTJgsKFoA')">Creación de proyectos de automatización</a>
+            <a href="#" onclick="loadVideo('eI0IOit44_4')">Ejemplos prácticos</a>
+        </div>
     </div>
-	<div id ="muki">
-		<h1 id="colortitulo">PYTHON NIVEL 01 - Profe Gustavo (549) 11-76440462</h1>
-	</div>
+
     <div id="video-container">
-        <!-- El video se cargará aquí -->
+        <h1>Curso de Python Nivel 1 orientado a automatización </h1>
+        <h1>Comienza 12/09 whatsapp (549)1176440462</h1>
+        <h1>Costo U$S 9</h1>
+        <p>Haz clic en los subtemas para cargar el video correspondiente.</p>
     </div>
 
     <script>
-        // Cargar reproductor de video vacío al cargar la página
-        window.onload = function() {
-            loadVideo('');
-        };
-		
-        function loadVideo(videoId) {
-            var videoContainer = document.getElementById('video-container');
-            videoContainer.innerHTML = '<iframe width="860" height="515" src="https://www.youtube.com/embed/' +videoId+ '" frameborder="0" allowfullscreen></iframe>';
+        // Función para mostrar/ocultar submenús y cerrar los demás
+        function toggleSubmenu(id) {
+            var allSubmenus = document.getElementsByClassName('submenu');
+            
+            // Cerrar todos los submenús
+            for (var i = 0; i < allSubmenus.length; i++) {
+                if (allSubmenus[i].id !== id) {
+                    allSubmenus[i].style.display = 'none';
+                }
+            }
+            
+            // Alternar el submenú clickeado
+            var submenu = document.getElementById(id);
+            submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
         }
 
-       
+        // Función para cargar el video en el contenedor
+        function loadVideo(videoId) {
+            var videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = '<iframe width="860" height="555" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>';
+        }
     </script>
+
 </body>
 </html>
+
+
+
